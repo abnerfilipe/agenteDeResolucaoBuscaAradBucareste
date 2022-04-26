@@ -12,6 +12,7 @@ public class Vertice {
     private ArrayList<Vertice> filhos = new ArrayList<Vertice>();
     private ArrayList<Vertice> vizinhos = new ArrayList<Vertice>();
     private boolean visitado = false;
+    private int heuristica;
     private String cor = "branco"; 
     
 	public Vertice(String nome){
@@ -29,6 +30,14 @@ public class Vertice {
             this.pai = this;
         }
     }
+    public void setHeuristica(int value){
+        this.heuristica = value;
+    }
+    public int getHeuristica() {
+        return heuristica;
+    }
+
+
 	public String getCor() {
 		return cor;
 	}

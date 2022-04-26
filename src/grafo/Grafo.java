@@ -285,7 +285,31 @@ public class Grafo {
     		return true;
     	}
     	return false;
-    }
+	}
+	
+	public ArrayList<Vertice> buscaGulosaRecursiva(Vertice atual) {
+		ArrayList<Vertice> aux = atual.getFilhos();
+		ArrayList<Vertice> caminho = new ArrayList<Vertice>();
+
+		atual.setVisitado(true);
+		Vertice vAux = aux.get(0);
+		for (Vertice vertice : aux) {
+			if(vertice.getHeuristica() < vAux.getHeuristica()){
+				vAux = vertice;	
+				caminho.add(vAux);
+			}
+		}
+		return caminho;
+	}
+	public ArrayList<Vertice>buscaGolusa(Vertice origem){
+		
+		for (Vertice vertice : caminho) {
+			
+		}
+		
+	}
+	
+	
     
 }
 	

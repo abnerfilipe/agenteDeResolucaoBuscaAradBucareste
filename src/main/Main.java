@@ -29,103 +29,7 @@ public class Main {
         // System.out.println(grafo.getArestas());
         // System.out.println(grafo.buscaEmProfundidade("Arad", "Bucareste"));
 	}
-	// public static void grafos() {
-	// 	Vertice arad = new Vertice("1");
-    //     Vertice no2 = new Vertice("2",no1);
-    //     Vertice no3 = new Vertice("3",no1);
-    //     Vertice no4 = new Vertice("4",no2);
-    //     Vertice no5 = new Vertice("5",no2);
-    //     Vertice no6 = new Vertice("6",no3);
-    //     Vertice no7 = new Vertice("7",no4);
-    //     // no1.setVizinhos(no2);
-    //     Aresta a1 = new Aresta(1 , no1, no2);
-    //     Aresta a2 = new Aresta(1 , no1, no3);
-    //     Aresta a3 = new Aresta(1 , no2, no4);
-    //     Aresta a4 = new Aresta(1 , no2, no5);
-    //     Aresta a5 = new Aresta(1 , no3, no6);
-    //     Aresta a6 = new Aresta(1 , no4, no7);
-    //     // no1.addIncidentes(a1);
-
-    //     Grafo g1 = new Grafo();
-
-    //     ArrayList <Vertice> nos = new ArrayList<Vertice>();
-    //     nos.add(no1);
-    //     nos.add(no2);
-    //     nos.add(no3);
-    //     nos.add(no4);
-    //     nos.add(no5);
-    //     nos.add(no6);
-    //     nos.add(no7);
-
-    //     g1.setVertices(nos);
-
-    //     ArrayList <Aresta> arestas = new ArrayList<>();
-    //     arestas.add(a1);
-    //     arestas.add(a2);
-    //     arestas.add(a3);
-    //     arestas.add(a4);
-    //     arestas.add(a5);
-    //     arestas.add(a6);
-
-    //     g1.setArestas(arestas);
-
-    //     // System.out.println(no1.getPai().getNome());
-    //     // System.out.println(no1.getFilhos());
-    //     // System.out.println(no2.getPai().getNome());
-    //     // System.out.println(no2.getFilhos());
-    //     // System.out.println(no3.getPai().getNome());
-    //     // System.out.println(no3.getFilhos());
-    //     // System.out.println(no4.getPai().getNome());
-    //     // System.out.println(no4.getFilhos());
-    //     System.out.println("arvore completa");
-    //     g1.imprimeArvore();
-    //     // System.out.println("busca em largura");
-    //     // System.out.println(g1.buscaEmLargura("1", "2"));
-    //     // System.out.println("busca em profundidade");
-    //     // System.out.println(g1.buscaEmProfundidade("1", "7"));
-          
-    // }
-    
-    // public static void buscaEmProfundidadePROBLEMA() {
-        
-
-        // Aresta a1 = new Aresta(1 , no1, no2);
-        // Aresta a2 = new Aresta(1 , no1, no3);
-        // Aresta a3 = new Aresta(1 , no2, no4);
-        // Aresta a4 = new Aresta(1 , no2, no5);
-        // Aresta a5 = new Aresta(1 , no3, no6);
-        // Aresta a6 = new Aresta(1 , no4, no7);
-        // // no1.addIncidentes(a1);
-
-        // Grafo g1 = new Grafo();
-
-        // ArrayList <Vertice> nos = new ArrayList<Vertice>();
-        // nos.add(no1);
-        // nos.add(no2);
-        // nos.add(no3);
-        // nos.add(no4);
-        // nos.add(no5);
-        // nos.add(no6);
-        // nos.add(no7);
-
-        // g1.setVertices(nos);
-
-        // ArrayList <Aresta> arestas = new ArrayList<>();
-        // arestas.add(a1);
-        // arestas.add(a2);
-        // arestas.add(a3);
-        // arestas.add(a4);
-        // arestas.add(a5);
-        // arestas.add(a6);
-
-        // g1.setArestas(arestas);
-
-        // System.out.println("arvore completa");
-        // g1.imprimeArvore();
-        // System.out.println("busca em largura");
-        // System.out.println(g1.buscaEmLargura("1", "2"));
-    // }
-
+	
     public static Grafo Problema() {
         // Vertices
         Vertice arad = new Vertice("Arad");
@@ -151,51 +55,51 @@ public class Main {
 
         // Arestas
         // arad -> Sibiu
-        Aresta a1 = new Aresta(1 , arad, sibiu);
+        Aresta a1 = new Aresta(140 , arad, sibiu);
         // arad -> timisoara
-        Aresta a2 = new Aresta(1 , arad, timisoara);
+        Aresta a2 = new Aresta(118 , arad, timisoara);
         // arad -> Zerind
-        Aresta a3 = new Aresta(1 , arad, zerind);
+        Aresta a3 = new Aresta(75 , arad, zerind);
         // timisoara -> lugoj
-        Aresta a4 = new Aresta(1 , timisoara, lugoj);
+        Aresta a4 = new Aresta(111 , timisoara, lugoj);
         // Logoj -> Mehadia
-        Aresta a5 = new Aresta(1 , lugoj, mehadia);
+        Aresta a5 = new Aresta(70 , lugoj, mehadia);
         // Mehadia -> Drobeta
-        Aresta a6 = new Aresta(1 , mehadia, drobeta);
+        Aresta a6 = new Aresta(75 , mehadia, drobeta);
         // Drobeta -> Craiova   
-        Aresta a7 = new Aresta(1 , drobeta, craiova);
+        Aresta a7 = new Aresta(120 , drobeta, craiova);
         // Zerind -> Oradea
-        Aresta a8 = new Aresta(1 , zerind, oradea);
+        Aresta a8 = new Aresta(71 , zerind, oradea);
         // Oradea -> Sibiu
-        Aresta a9 = new Aresta(1 , oradea, sibiu);
+        Aresta a9 = new Aresta(151 , oradea, sibiu);
         // Rimnicu Vilcea -> Pitesti
-        Aresta a10 = new Aresta(1 , rimnicu, pitesti);
+        Aresta a10 = new Aresta(97 , rimnicu, pitesti);
         // Rimnicu Vilcea -> Craiova
-        Aresta a11 = new Aresta(1 , rimnicu, craiova);
+        Aresta a11 = new Aresta(146 , rimnicu, craiova);
         //Craiova -> Pitesti 
-        Aresta a12 = new Aresta(1 , craiova, pitesti);
+        Aresta a12 = new Aresta(138 , craiova, pitesti);
         // Sibiu -> Fagaras
-        Aresta a13 = new Aresta(1 , sibiu, fagaras);
+        Aresta a13 = new Aresta(99 , sibiu, fagaras);
         // Sibiu -> Rimnicu Vilcea
-        Aresta a14 = new Aresta(1 , sibiu, rimnicu);
+        Aresta a14 = new Aresta(80 , sibiu, rimnicu);
         // Fagaras - > Bucareste
-        Aresta a15 = new Aresta(1 , fagaras, buscareste);
+        Aresta a15 = new Aresta(211 , fagaras, buscareste);
         // Pitesti -> Bucareste
-        Aresta a16 = new Aresta(1 , pitesti, buscareste);
+        Aresta a16 = new Aresta(101 , pitesti, buscareste);
         // Bucareste -> Giurgiu
-        Aresta a17 = new Aresta(1 , buscareste, giurgiu);
+        Aresta a17 = new Aresta(90 , buscareste, giurgiu);
         // Bucareste -> Urzeceni 
-        Aresta a18 = new Aresta(1 , buscareste, uziceni);
+        Aresta a18 = new Aresta(85 , buscareste, uziceni);
         // Urzeceni -> Hirsova
-        Aresta a19 = new Aresta(1 , uziceni, hirsova);
+        Aresta a19 = new Aresta(98 , uziceni, hirsova);
         // Hirsova -> Eforie
-        Aresta a20 = new Aresta(1 , hirsova, eforie);
+        Aresta a20 = new Aresta(86 , hirsova, eforie);
         // Urzeceni -> Vaslui
-        Aresta a21 = new Aresta(1 , uziceni, vaslui);
+        Aresta a21 = new Aresta(142 , uziceni, vaslui);
         // Vaslui -> Iasi
-        Aresta a22 = new Aresta(1 , vaslui, iasi);
+        Aresta a22 = new Aresta(92 , vaslui, iasi);
         // Iasi -> Neamt
-        Aresta a23 = new Aresta(1 , iasi, neamt);
+        Aresta a23 = new Aresta(87 , iasi, neamt);
 
         
         ArrayList <Vertice> vertices = new ArrayList<Vertice>();
